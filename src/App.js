@@ -8,6 +8,7 @@ import Logo from "./components/DisplayComponents/Logo";
 import Display from "./components/DisplayComponents/Display";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers";
 import Operators from "./components/ButtonComponents/OperatorButtons/Operators";
+import Specials from "./components/ButtonComponents/SpecialButtons/Specials";
 
 // Importing component to display calculator screen 
 
@@ -27,6 +28,7 @@ function App() {
         <Display number={0}/>
         <Numbers />
         <Operators /> 
+        <Specials />
       </div>
     </div>
   );
