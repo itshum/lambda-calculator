@@ -24,9 +24,9 @@ function App() {
   
   // Creating new function to help add numbers. Take number as argument. We set our DisplayValue and add the number, so it displays current value of number and adds numbers after click.
 
-  const addNumbers = (number) => {
+  const addNumber = (number) => {
     setDisplayValue(displayValue => displayValue + number);
-  }
+  };
 
   return (
     <div className="container">
@@ -34,8 +34,8 @@ function App() {
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files 
         Added Display tag to display calculator screen component w/ initial number of 0 but then change it to DisplayValue variable*/}
-        <Display number={displayValue}/>
-        <Numbers />
+        <Display number={displayValue} />
+        <Numbers addNumber={addNumber} />
         <Operators /> 
         <Specials />
       </div>
