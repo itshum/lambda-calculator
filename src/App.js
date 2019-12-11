@@ -28,6 +28,11 @@ function App() {
     setDisplayValue(displayValue => displayValue + number);
   };
 
+  // We're using eval to get calculator to work
+  const addOperator = (operator) => {
+    setDisplayValue(displayValue => displayValue + " " + operator + " ");
+  };
+
   return (
     <div className="container">
       <Logo />
@@ -36,7 +41,7 @@ function App() {
         Added Display tag to display calculator screen component w/ initial number of 0 but then change it to DisplayValue variable*/}
         <Display number={displayValue} />
         <Numbers addNumber={addNumber} />
-        <Operators /> 
+        <Operators addOperator={addOperator} /> 
         <Specials />
       </div>
     </div>
