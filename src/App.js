@@ -6,6 +6,8 @@ import "./App.css";
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
 import Display from "./components/DisplayComponents/Display";
+import Numbers from "./components/ButtonComponents/NumberButtons/Numbers";
+import Operators from "./components/ButtonComponents/OperatorButtons/Operators";
 
 // Importing component to display calculator screen 
 
@@ -23,6 +25,8 @@ function App() {
         {/* STEP 4 - Render your components here and be sure to properly import/export all files 
         Added Display tag to display calculator screen component w/ initial number of 0*/}
         <Display number={0}/>
+        <Numbers />
+        <Operators /> 
       </div>
     </div>
   );
